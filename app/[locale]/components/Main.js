@@ -26,10 +26,11 @@ export default function Main({ params }) {
   return (
     <main className="w-full flex flex-col gap-24 pb-24">
       <Banner onClick={onClicktoReff} />
-      <Advantages />
       <div ref={mapRef}>
       <Map  />
       </div>
+      <Advantages />
+    
       <div className="w-full max-w-[1440px] px-2 mx-auto">
         <PopularAnalyze params={params} />
       </div>
