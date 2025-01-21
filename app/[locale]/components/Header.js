@@ -7,7 +7,8 @@ function Header({ locale }) {
   const t = useTranslations('Header.Navigation')
 
   const navOptions = [
-    { id: 2, name: t('analyze'), url: '/' },
+    { id: 2, name: t('analyze'), url: 'https://interlab.uz' },
+    { id: 2, name: t('ckdl'), url: '/' },
     { id: 5, name: t('addresses'), url: '/addresses' },
     { id: 3, name: t('analyzemobile'), url: '/analyze' },
     // { id: 4, name: t('doctors'), url: '/doctors' },

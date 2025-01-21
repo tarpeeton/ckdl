@@ -20,7 +20,7 @@ export default function Banner({onClick}) {
         <div className="flex-1 h-full flex flex-col justify-center slg:gap-12 py-8">
           <div>
             <h1 className="text-5xl w-full max-w-[600px] max-mdx:text-4xl font-bold text-[#FB6A68]">
-              {locale === 'ru' ? "Сдавайте более 800 анализов в вашей семейной поликлинике" : "Oilaviy poliklinikangizda 800 dan ortiq tahlil topshiring"}
+              {locale === 'ru' ? "Сдавайте более 1000 анализов в вашей семейной поликлинике" : "Oilaviy poliklinikangizda 1000 dan ortiq tahlil topshiring"}
               </h1>
             <p className="text-[#989898]">
               

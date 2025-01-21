@@ -2,7 +2,7 @@
   "Header": {
     "Navigation": {
       "ckdl": "CKDL",
-      "analyze": "Bosh Sahifa Ckdl",
+      "analyze": "Bosh Sahifa",
       "services": "Xizmatlar",
       "doctors": "Shifokorlar",
       "addresses": "Manzillar",
@@ -46,7 +46,7 @@
     "Popular-analyze": {
       "title": "Ommabop tahlillar",
       "description": "Tahlil natijasini bir kunda onlayn oling! \n(ko'pchilik tahlillarga nisbatan amal qiladi)",
-      "graphic": "Tahlillarni qabul qilish 07:00 dan 16:00 gacha",
+      "graphic": "Tahlillarni qabul qilish 08:00 dan 12:00 gacha",
       "all": "Barchasini ko'rish"
     },
     "Instruction": {
@@ -134,7 +134,7 @@
     "services": {
       "title": "Bizning xizmatlarimiz",
       "title1": "LABORATORIYA TAHLILLARI",
-      "description1": "INTERMED 800 dan ortiq laboratoriya tahlillarini, jumladan biokimyoviy, gematologik, immunologik va genetik tadqiqotlarni taklif etadi. Bizning laboratoriyalarimiz eng zamonaviy avtomatik analizatorlar bilan jihozlangan, bu natijalarning aniqligi va ishonchliligini ta'minlaydi.",
+      "description1": "INTERMED 1000 dan ortiq laboratoriya tahlillarini, jumladan biokimyoviy, gematologik, immunologik va genetik tadqiqotlarni taklif etadi. Bizning laboratoriyalarimiz eng zamonaviy avtomatik analizatorlar bilan jihozlangan, bu natijalarning aniqligi va ishonchliligini ta'minlaydi.",
       "title2": "DIAGNOSTIKA XIZMATLARI",
       "description2": "Biz yuqori texnologiyali diagnostika xizmatlarini taklif qilamiz, jumladan ultratovush tekshiruvi (UZT), raqamli rentgenografiya, endoskopiya, EKG va dopplerografiya. Zamonaviy uskunalar kasalliklarni erta bosqichda aniqlash va davolash jarayonini samarali nazorat qilish imkonini beradi.",
       "title3": "MUTAXASSIS MASLAHATLARI",

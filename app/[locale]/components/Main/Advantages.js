@@ -52,8 +52,8 @@ export default function Advantages() {
           </div>
           <h4 className='font-medium text-xl max-mdl:text-lg w-full max-w-[350px]'>
             {locale === 'ru'
-              ? 'Большой ассортимент анализов (800+)'
-              : 'Keng tahlillar assortimenti (800+)'}
+              ? 'Большой ассортимент анализов (1000+)'
+              : 'Keng tahlillar assortimenti (1000+)'}
           </h4>
         </div>
         <div className='rounded-3xl p-6 flex flex-col bg-[#FFEFEF] gap-6 col-span-1 slg:col-span-2'>
