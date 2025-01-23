@@ -1,12 +1,6 @@
-// import AboutService from '../components/about/AboutService'
-// import AboutInfo from '../components/about/AboutInfo'
-// import AboutBanner from '../components/about/AboutBanner'
-// import AboutAchiev from '../components/about/AboutAchiev'
-// import AboutLicense from '../components/about/AboutLicense'
-// import AboutService from '../components/About/AboutAchiev'
-// import AboutInfo from '../components/About/AboutInfo'
+
 import AboutBanner from '../components/About/AboutBanner'
-// import AboutAchiev from '../components/About/AboutAchiev'
+
 import AboutLicense from '../components/About/AboutLicense'
 
 import Blog from '@/app/[locale]/components/Blog'
@@ -15,17 +9,22 @@ import MainServices from '../components/MainServices'
 import About from '../components/About'
 import WhyWe from '../components/ckdl/WhyWe'
 
+
+
+
+
+
+
+
 export default function AboutPage({ params }) {
   const t = useTranslations()
-  return (
-    <main className='w-full h-auto bg-white pb-24'>
-      <AboutBanner />
-      {/* <AboutInfo /> */}
-      {/* <AboutService /> */}
-      {/* <div className="px-2">
-        <AboutAchiev />
 
-      </div> */}
+  return (
+    <>
+    
+      <main className='w-full h-auto bg-white pb-24'>
+      <AboutBanner />
+     
       <MainServices params={params} />
       <div className='mb-24 px-2'>
         <About />
@@ -52,5 +51,7 @@ export default function AboutPage({ params }) {
         </div>
       </div>
     </main>
+    </>
+   
   )
 }
