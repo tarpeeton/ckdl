@@ -81,7 +81,7 @@ export default function PopularAnalyze() {
             height={100}
             alt='Clock Icon'
             className='w-5'
-          />{' '}
+          />  
           {t('Main.Popular-analyze.graphic')}
         </p>
         <h2 className='font-bold text-3xl'>
@@ -92,7 +92,7 @@ export default function PopularAnalyze() {
         </p>
       </div>
       <div className='w-full grid grid-cols-1 mdx:grid-cols-2 lg:grid-cols-3 gap-4'>
-        <Link
+        {/* <Link
           href={`https://interlab.uz/ru/check-up`}
           className='w-full flex flex-col justify-between bg-[#FFEFEF] p-4 rounded-3xl'
         >
@@ -120,15 +120,18 @@ export default function PopularAnalyze() {
               {locale === 'ru' ? 'Перейти' : 'Batafsil'}
             </button>
           </div>
-        </Link>
+        </Link> */}
         {filteredTests
-          .slice(0, 5)
+          .slice(0, 6)
           .reverse()
           .map((test, index) => (
             <PopularAnalyzeItem
               locale={locale}
               key={index}
               title={test.testSectionName}
+              description={test.testName}
+              slug={test.testId}
+              price={test.fee}
             />
           ))}
       </div>

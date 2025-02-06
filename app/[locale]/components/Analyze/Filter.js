@@ -116,7 +116,7 @@ export default function Filter({ params }) {
 
   return (
     <div className='w-full h-auto bg-white max-mdl:px-4'>
-      <div className=' mdx:px-[20px] lg:px-[40px] mb-[15px] mdx:mb-[30px] mt-[30px] mdx:mt-[60px] lg:mt-[80px]'>
+      <div className=' mdx:px-[20px] lg:px-[40px] mb-[15px] mdx:mb-[30px]'>
         <SearchComp
           placeholder={
             locale === 'ru'
@@ -128,15 +128,15 @@ export default function Filter({ params }) {
         />
       </div>
 
-      <div className='w-full mdx:px-[20px] lg:mdx:px-0 max-w-[1440px] mx-auto h-auto flex max-mdl:flex-col gap-10'>
+      <div className='w-full mdx:px-[20px] lg:mdx:px-0 max-w-[1440px] mx-auto h-auto flex max-mdl:flex-col gap-10 lg:px-[40px] xl:px-0'>
         {/* Desktop version of categories */}
         <div className='w-full mdl:max-w-1/3 mdl:w-1/3 flex flex-col gap-3 h-auto max-mdl:hidden'>
           {loadingCategories ? (
             <Spin size='large' /> // Индикатор загрузки
           ) : (
-            categories.map(category => (
+            categories.map((category, index) => (
               <FilterCategory
-                key={category}
+                key={index}
                 title={category}
                 catname={category}
                 handleFilter={handleFilter}
@@ -178,14 +178,18 @@ export default function Filter({ params }) {
         </div>
 
         {/* List of filtered tests */}
-        <div className='w-full mdl:max-w-2/3 mdl:w-2/3 flex flex-col gap-3 h-auto'>
+        <div className='w-full mdl:max-w-2/3 mdl:w-2/3 flex flex-col gap-[30px] h-auto'>
           {loadingTests ? (
             <Spin size='large' /> // Индикатор загрузки тестов
           ) : filteredTests.length > 0 ? (
-            filteredTests.map(test => (
+            filteredTests.map((test, index) => (
               <FilterAnalyzeItems
-                key={test.id}
+                key={index}
                 title={test.testName}
+                shortDescription={
+                  test.shortDescription || 'Описание отсутствует'
+                }
+                price={test.fee}
                 slug={test.testId}
                 locale={locale}
               />
