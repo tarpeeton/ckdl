@@ -2,6 +2,7 @@
 
 import PopularAnalyzeItem from '@/app/[locale]/components/PopularAnalyzeItem'
 import { useEffect, useState } from 'react'
+
 import { client } from '@/sanity/lib/client'
 import { useLocale, useTranslations } from 'next-intl'
 import Image from 'next/image'
