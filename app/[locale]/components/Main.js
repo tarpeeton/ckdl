@@ -41,7 +41,7 @@ export default function Main({ params }) {
         <Application />
       </div>
       <div className="max-w-[1440px] px-2 mx-auto w-full">
-        <h2 className="mt-52 text-3xl font-bold text-neutral-900 max-md:mt-24 max-md:max-w-full mb-0">
+        <h2 className="mt-32 text-3xl font-bold text-neutral-900 max-md:mt-24 max-md:max-w-full mb-0">
           {t("Blogs.title")}
         </h2>
         <Blog locale={params.locale} />

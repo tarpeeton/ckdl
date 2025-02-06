@@ -3,11 +3,12 @@ import { useState, useEffect } from "react";
 import arrowDown from "@/public/svg/arrow-down-red.svg";
 import Image from "next/image";
 import ForPage from "./ForPage"
+import { useParams } from "next/navigation";
 
 export default function Filter({ clinicsLocations, sortedClinics , activeClinic , onLocationClick}) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [visibleReviewsCount, setVisibleReviewsCount] = useState(3); // Default for mobile
-
+  const {locale} = useParams()
   const toggleReviews = () => {
     setIsExpanded(!isExpanded);
   };
@@ -42,9 +43,9 @@ export default function Filter({ clinicsLocations, sortedClinics , activeClinic 
           ? clinicsLocations.slice(0, isExpanded ? clinicsLocations.length : visibleReviewsCount).map((clinic, index) => (
               <ForPage
                 key={index}
-                title={clinic.name}
-                address={clinic.address}
-                graphic={[clinic.graphic]}
+                title={clinic.name[locale]}
+                address={clinic.address[locale]}
+                graphic={[clinic.graphic[locale]]}
                 tel={clinic.tel}
                 url="/"
                 className={clinic.id === activeClinic ? "bg-red-100" : ""}
@@ -54,9 +55,9 @@ export default function Filter({ clinicsLocations, sortedClinics , activeClinic 
           : sortedClinics.slice(0, isExpanded ? sortedClinics.length : visibleReviewsCount).map((clinic, index) => (
               <ForPage
                 key={index}
-                title={clinic.name}
-                address={clinic.address}
-                graphic={[clinic.graphic]}
+                title={clinic.name[locale]}
+                address={clinic.address[locale]}
+                graphic={[clinic.graphic[locale]  ]}
                 tel={clinic.tel}
                 url="/"
                 className={clinic.id === activeClinic ? "bg-red-100" : ""}
